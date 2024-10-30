@@ -22,6 +22,9 @@
 // import ButtonWithCounter from "./ButtonWithCounter";
 // import ErrorBoundary from "./ErrorBoundary";
 
+import React from "react";
+import Counter from "./Counter";
+
 import "./App.css";
 
 /**** Mini Projet 1 ****/
@@ -693,6 +696,11 @@ function App() {
       </div> */}
 
       {/* ** Mini Projet 8 ** */}
+
+      <div>
+        <h1>Application de Gestion des Clics</h1>
+        <Counter />
+      </div>
     </>
   );
 }
