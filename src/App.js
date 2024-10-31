@@ -22,8 +22,12 @@
 // import ButtonWithCounter from "./ButtonWithCounter";
 // import ErrorBoundary from "./ErrorBoundary";
 
-import React from "react";
-import Counter from "./Counter";
+// import React from "react";
+// import Counter from "./Counter";
+
+import React, { useState } from "react";
+import CreateUser from "./CreateUser";
+import UserList from "./UserList";
 
 import "./App.css";
 
@@ -639,11 +643,17 @@ o Promises and Async/Await **/
 // Charger le composant paresseusement
 // const LazyComponent = React.lazy(() => import("./LazyComponent"));
 
-/**** Mini Projet 8 ****/
-
 /***********************************************************************************************************************************/
 
 function App() {
+  /**** Mini Projet 9 ****/
+
+  const [users, setUsers] = useState([]);
+
+  const addUserToList = (user) => {
+    setUsers((prevUsers) => [...prevUsers, user]);
+  };
+
   return (
     <>
       {/* ** Mini Projet 1 ** */}
@@ -697,9 +707,17 @@ function App() {
 
       {/* ** Mini Projet 8 ** */}
 
-      <div>
+      {/* <div>
         <h1>Application de Gestion des Clics</h1>
         <Counter />
+      </div> */}
+
+      {/* ** Mini Projet 9 ** */}
+
+      <div>
+        <h1>Application de Gestion des Utilisateurs</h1>
+        <CreateUser onUserCreated={addUserToList} />
+        <UserList />
       </div>
     </>
   );

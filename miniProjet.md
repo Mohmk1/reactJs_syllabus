@@ -143,3 +143,17 @@ Fonctionnalités :
 Le composant Counter doit incrémenter la valeur lorsqu'on clique sur un bouton.
 Utilise Jest et React Testing Library pour écrire des tests unitaires et des tests d'interface utilisateur.
 Déploie l'application sur Netlify ou Vercel et partage le lien.
+
+Mini Projet 9 : Application de Gestion des Utilisateurs
+
+./\* Installation : npm install axios
+./\* Création de : UserList.js, de Createuser.js et de UserItem.js le tout dans le dossier src.
+
+Liste des Utilisateurs (GET) : Crée un composant UserList qui récupère une liste d'utilisateurs depuis l'API https://jsonplaceholder.typicode.com/users.
+Création d'un Utilisateur (POST) : Crée un composant CreateUser qui permet d'envoyer un nouveau profil d'utilisateur.
+Suppression d'un Utilisateur (DELETE) : Ajoute une fonctionnalité pour supprimer un utilisateur.
+Fonctionnalités :
+
+Le composant UserList doit afficher une liste d'utilisateurs.
+Le composant CreateUser doit permettre à l'utilisateur de créer un nouveau profil en envoyant des informations à l'API.
+Une option de suppression doit être ajoutée à chaque utilisateur pour permettre de le supprimer de la liste.
